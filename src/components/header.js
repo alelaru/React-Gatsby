@@ -5,15 +5,15 @@ import * as headerStyles from "./header.module.scss"
 
 const Header = () => {
     // Call graphql to get the data
-    // const data = useStaticQuery(graphql`
-    //     query{
-    //         site{
-    //             siteMetadata{
-    //                 title
-    //             }
-    //         }
-    //     }     
-    // `);
+    const data = useStaticQuery(graphql`
+        query{
+            site{
+                siteMetadata{
+                    title
+                }
+            }
+        }     
+    `);
      
     
     return (

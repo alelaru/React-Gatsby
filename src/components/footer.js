@@ -3,19 +3,19 @@ import React from 'react';
 
 const Footer = () => {
     // Call the authors from Graphql
-    const author = useStaticQuery(graphql`
-        query{
-            site{
-                siteMetadata{
-                    author
-                }
-            }
-        }     
-    `);
+    // const author = useStaticQuery(graphql`
+    //     query{
+    //         site{
+    //             siteMetadata{
+    //                 author
+    //             }
+    //         }
+    //     }     
+    // `); {author.site.siteMeta.author}
 
     return (
         <footer>
-            <p>Created by {author.site.siteMetadata.author}, 2021</p>
+            <p>Created by , 2021</p>
         </footer>
     );
 }
