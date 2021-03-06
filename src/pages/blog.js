@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
 
@@ -13,6 +13,9 @@ const BlogPage = () => {
           frontmatter {
             title
             date
+          }
+          fields {
+            slug 
           }
         }
       }
@@ -30,7 +33,9 @@ const BlogPage = () => {
                         <li>
                             <h2>{blog.node.frontmatter.title}</h2>
                             <p>{blog.node.frontmatter.date}</p>
-                        </li>)
+                            <Link to={`/blog/${blog.node.fields.slug}`} >Go to the link</Link>
+                        </li>
+                        )
                     })}
                 </ol>
             </Layout>
