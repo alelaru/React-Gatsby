@@ -10,6 +10,8 @@ module.exports = {
     title: 'Full-Stack Bootcamp',
     author: 'Alejandro Lara'
   },
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [`gatsby-plugin-sass`],  
+
+  // "AKJNKAJSNSAKJ"
 }
  
