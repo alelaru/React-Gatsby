@@ -12,6 +12,7 @@ module.exports = {
     author: 'Alejandro Lara Ruiz'
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
